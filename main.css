@@ -23,26 +23,49 @@ body:before {
 }
 
 #mainContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+
     flex-direction: column;
+    -webkit-flex-direction: column;
     padding: 0;
     margin: 0;
     height: 100%;
 }
 
 .topContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+
     flex-flow: row wrap;
     justify-content: space-between;
+
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+
     margin-top: auto;
     margin-left: 150px;
     margin-right: 150px;
 }
 
 .bottomContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+
     flex-flow: row wrap;
     justify-content: center;
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: center;
+
     margin-top: 160px;
     margin-left: 20px;
     margin-right: 20px;
@@ -52,11 +75,13 @@ body:before {
 @media all and (max-width: 640px) {
   .bottomContainer {
     flex-direction: column;
+    -webkit-flex-direction: column;
     margin-left: auto;
     margin-right: auto;
   }
   .topContainer {
     flex-direction: column;
+    -webkit-flex-direction: column;
     margin-left: auto;
     margin-right: auto;
   }
