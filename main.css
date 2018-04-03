@@ -18,16 +18,27 @@ body:before {
     background-size: cover;
 }
 
-.voteButton {
-    background-color: #3F51B5;
+.defaultButton {
     border: none;
-    color: white;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    outline: none;
     width: 150px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.voteButton {
+    background-color: #3F51B5;
+    color: white;
+}
+
+.voteButton:hover {
+    background-color: #303F9F;
+    color: white;
 }
 
 #mainContainer {
@@ -103,14 +114,12 @@ body:before {
 
 .bottomButton {
     background-color: #f5f5f5;
-    border: none;
     color: #222222;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 150px;
+}
+
+.bottomButton:hover {
+    background-color: #C5C5C5;
+    color: #222222;
 }
 
 .buttonRow {
